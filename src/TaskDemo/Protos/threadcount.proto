@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "ThreadMonitor";
+
+package monitor;
+
+service ThreadMonitor {
+  rpc RecordCount (ThreadCountRequest) returns (google.protobuf.Empty);
+}
+
+message ThreadCountRequest {
+  int32 count = 1;
+}
