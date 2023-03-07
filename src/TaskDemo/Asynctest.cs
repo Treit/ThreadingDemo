@@ -163,7 +163,7 @@
         /// </summary>
         /// <param name="sem">The semaphore to wait on.</param>
         /// <param name="cancelToken">The cancellation token to use.</param>
-        public async static Task<bool> StartWwaitSemaphoreSlimWithCancelTokenAsync(SemaphoreSlim sem, CancellationToken cancelToken)
+        public async static Task<bool> StartWaitSemaphoreSlimWithCancelTokenAsync(SemaphoreSlim sem, CancellationToken cancelToken)
         {
             bool result = false;
 
